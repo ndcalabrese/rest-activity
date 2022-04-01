@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nokora:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(7, 63, 82);
+            font-family: 'Nokora', sans-serif;
+            color: white;
+        }
+        #button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        button {
+            width: 40%;
+            margin: 2px;
+        }
+        .post-container {
+            display: flex;
+            justify-content: center;
+        }
+        .post-title {
+            display: flex;
+            justify-content: center;
+        }
+        .deleted-post-message {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+            height: 50px;
+        }
+        pre {
+            overflow-x: auto;
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <div id="button-container">
+        <button type="button" id="get-all-posts-button">
+            Get all posts
+        </button>
+        <button type="button" id="get-post-id-10-button">
+            Get post id=10
+        </button>
+        <button type="button" id="new-post-log-id-button">
+            New post, log id
+        </button>
+        <button type="button" id="replace-post-id-12-button">
+            Replace post id=12
+        </button>
+        <button type="button" id="update-title-post-id-12-button">
+            Update title of post id=12
+        </button>
+        <button type="button" id="delete-post-id-12-button">
+            Delete post id=12
+        </button>
+    </div>
+    <div id="post-container">
+
+    </div>
+    <script type="text/javascript" src="rest.js" charset="utf-8"></script>
+</body>
+</html>
