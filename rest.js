@@ -162,9 +162,6 @@ buttonDeletePostId12.addEventListener("click", (e) => {
     fetch("https://jsonplaceholder.typicode.com/posts/12", {
         method: "DELETE",
     })
-    .then((response) => response.json())
-    .then((deletedPost) => {
-
         postContainer.innerHTML = "";
         const message = document.createElement("div");
         
@@ -172,6 +169,4 @@ buttonDeletePostId12.addEventListener("click", (e) => {
         
         message.setAttribute("class", "deleted-post-message");
         postContainer.appendChild(message);
-
-    })
 })
